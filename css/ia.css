@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+}
+
+.logo-title a {
+  color: #171717;
+}
+.logo-title a span {
+  color: #023e8a;
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+
+  .login a {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #0282db;
+  }
+
+  .login:hover {
+    text-decoration: underline;
+    color: #0282db;
+  }
+
+  .btn-cadastrar {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #171717;
+    padding: 5px 10px;
+    border: 1px solid #171717;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .btn-cadastrar:hover {
+    background-color: #0266b7;
+    color: #fff;
+    transition: 0.2s ease-in;
+    border: 1px solid transparent;
+  }
+}
+
+
+.container{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+
+    .menu-ia{
+      width: 20%;
+      height: 100%;
+      background-color: #0266b7;
+      align-items: flex-end;
+    }
+    .content{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      background-color: #c0c0c0;
+    }
+
+    .interacao-usuario{
+      width: 80%;
+      display: flex;
+      gap: 10px;
+      position: absolute;
+      bottom: 0;
+
+      #input-usuario{
+        width: 100%;
+      }
+
+
+      #btn-limpar{
+        font-family: "Poppins";
+        width: 150px;
+        padding: 5px 10px;
+      }
+
+    }
+}
