@@ -4,12 +4,122 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 header {
   width: 100%;
-  height: 140px;
+  height: 100px;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 100px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+}
+
+.logo-title a {
+  color: #171717;
+}
+.logo-title a span {
+  color: #023e8a;
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+
+  .login a {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #0282db;
+  }
+
+  .login:hover {
+    text-decoration: underline;
+    color: #0282db;
+  }
+
+  .btn-cadastrar {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #171717;
+    padding: 5px 10px;
+    border: 1px solid #171717;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .btn-cadastrar:hover {
+    background-color: #0266b7;
+    color: #fff;
+    transition: 0.2s ease-in;
+    border: 1px solid transparent;
+  }
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  padding: 0 100px;
+}
+
+.text-content {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  button {
+    width: 150px;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    background-color: #0282db;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 1px 2px 8px 1px rgba(0, 0, 0, 0.75);
+    }
+  }
+}
+
+.img-content {
+  max-width: 600px;
+}
+
+.img-content img {
+  max-width: 100%;
 }
