@@ -7,7 +7,7 @@ body{
 header{
     background-color: black;
     color: white;
-    padding: 15px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +31,7 @@ nav{
 }
 
 nav li{
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 nav a{
@@ -44,61 +44,56 @@ main{
     padding: 50px;
 }
 
-.login{
-    background-color: white;
-    border-radius: 5px;
-    padding: 20px;
-    max-width: 350px;
-    margin: 0 auto;
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
 }
 
-.login h2{
+.text-content{
     text-align: center;
+    margin-bottom: 50px;
+}
+
+.text-content h1{
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
-.login form{
-    display: flex;
-    flex-direction: column;
+.text-content h2{
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
-.login label{
-    margin-bottom: 5px;
-}
-
-.login input[type="text"],
-.login input[type="password"]{
-    padding: 10px;
-    border: 1px solid #343D3F;
-    border-radius: 3px;
-    margin-bottom: 15px;
-}
-
-.login button[type="submit"]{
-    background-color: #343D3F;
+.btn-cadastrar{
+    background-color: #007bff;
     color: white;
-    padding: 10px 15px;
+    padding: 15px 30px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-.login button[type="submit"]:hover{
-    background-color: #343D3F;
+.img-content{
+    width: 400px;
+    height: auto;
 }
 
-.login a{
-    color: #343D3F;
-    text-decoration: none;
+.img-content img{
+    width: 100%;
+    height: auto;
 }
 
-footer{
-    background-color: #343D3F;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-
-footer p{
-    margin: 0;
+@media (max-width: 768px){
+    main{
+        flex-direction: column;
+    }
+    .content{
+        max-width: 100%;
+    }
+    .img-content{
+        width: 100%;
+    }
 }
