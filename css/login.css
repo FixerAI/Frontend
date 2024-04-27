@@ -1,148 +1,143 @@
-/*
-
-CATÁLOGO DE CORES especiais
-
-1) #0282DB
-2) #0266B7
-3) #023E8A
-
-*/
-
-/* CABEÇALHO */
-
-header{
-    background-color: black;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.logo{
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
 }
 
-/* CORPO */
-
-
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+.logo {
+  cursor: pointer;
 }
 
-nav{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.logo-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
 }
 
-nav li{
-    margin-right: 20px;
+.logo-title a {
+  color: #171717;
+}
+.logo-title a span {
+  color: #023e8a;
 }
 
-nav a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+
+  .login a {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #0282db;
+  }
+
+  .login:hover {
+    text-decoration: underline;
+    color: #0282db;
+  }
 }
 
-main{
-    padding: 50px;
-}
+main {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+  font-family: "Poppins", sans-serif;
 
-.content{
+  .login {
+    width: 40%;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 500px;
-}
-
-.text-content{
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.text-content h1{
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.text-content h2{
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-/* RODAPÉ */
-
-p{
-    margin: 30px;
-    width: auto;
-    color: ;
-}
-
-/* LOGIN */
-
-.login{
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    padding: 20px;
-    width: 400px;
-    margin: 33px;
-}
-
-#login{
+    background-color: #0282db;
     padding: 10px;
-    border: 1px solid white;
-    border-radius: 3px;
-    margin-bottom: 15px;
-    width: 80%;
+    border-radius: 8px;
+
+    .title-form {
+      color: #fff;
+    }
+
+    .form-content {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 100px;
+
+      form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .inputs-section input {
+          width: 100%;
+          height: 30px;
+          padding: 0 10px;
+          border-radius: 4px;
+          border: 1px solid #0282db;
+          font-family: "Poppins", sans-serif;
+          font-size: 14px;
+        }
+
+        .inputs-section label {
+          color: #fff;
+        }
+
+        .submit-section {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          button {
+            width: 100px;
+            font-size: 18px;
+            font-family: "Poppins", sans-serif;
+            background-color: transparent;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            color: #fff;
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+  }
 }
 
-#senha{
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 3px;
-    margin-bottom: 15px;
-    width: 80%;
-}
-
-.btn-cadastrar{
-    background-color: #007bff;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.img-content{
-    width: 400px;
-    height: auto;
-}
-
-.img-content img{
-    width: 100%;
-    height: auto;
-}
-
-#login{
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 3px;
-    margin-bottom: 15px;
-    width: 80%;
-}
-
-#senha{
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 3px;
-    margin-bottom: 15px;
-    width: 80%;
+footer {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 500;
+  width: 100%;
+  height: auto;
+  padding: 20px 100px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
