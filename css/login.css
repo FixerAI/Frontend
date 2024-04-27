@@ -1,0 +1,148 @@
+/*
+
+CATÁLOGO DE CORES especiais
+
+1) #0282DB
+2) #0266B7
+3) #023E8A
+
+*/
+
+/* CABEÇALHO */
+
+header{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+/* CORPO */
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    margin-right: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main{
+    padding: 50px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+}
+
+.text-content{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.text-content h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.text-content h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+/* RODAPÉ */
+
+p{
+    margin: 30px;
+    width: auto;
+    color: ;
+}
+
+/* LOGIN */
+
+.login{
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    margin: 33px;
+}
+
+#login{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+#senha{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+.btn-cadastrar{
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.img-content{
+    width: 400px;
+    height: auto;
+}
+
+.img-content img{
+    width: 100%;
+    height: auto;
+}
+
+#login{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+#senha{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    width: 80%;
+}
