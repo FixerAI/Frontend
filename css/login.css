@@ -1,8 +1,14 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
+/*
+
+CATÁLOGO DE CORES especiais
+
+1) #0282DB
+2) #0266B7
+3) #023E8A
+
+*/
+
+/* CABEÇALHO */
 
 header{
     background-color: black;
@@ -14,13 +20,19 @@ header{
 }
 
 .logo{
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
+    color: white;
 }
 
-.logo a{
-    color: white;
-    text-decoration: none;
+/* CORPO */
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
 nav{
@@ -65,6 +77,39 @@ main{
     font-size: 20px;
     margin-bottom: 20px;
 }
+/* RODAPÉ */
+
+p{
+    margin: 30px;
+    width: auto;
+    color: ;
+}
+
+/* LOGIN */
+
+.login{
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    margin: 33px;
+}
+
+#login{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+#senha{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    width: 80%;
+}
 
 .btn-cadastrar{
     background-color: #007bff;
@@ -86,14 +131,18 @@ main{
     height: auto;
 }
 
-@media (max-width: 768px){
-    main{
-        flex-direction: column;
-    }
-    .content{
-        max-width: 100%;
-    }
-    .img-content{
-        width: 100%;
-    }
+#login{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+#senha{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    width: 80%;
 }
