@@ -56,6 +56,16 @@ header {
     color: #0282db;
   }
 
+  .home{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #171717;
+  }
+  .home:hover{
+    text-decoration: none;
+    color: #0282db;
+  }
+
   .btn-cadastrar {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
@@ -76,44 +86,110 @@ header {
   }
 }
 
+main{
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: calc(100vh - 100px);
 
-.container{
-    width: 100%;
-    height: calc(100vh - 100px);
-    display: flex;
 
-    .menu-ia{
-      width: 20%;
-      height: 100%;
-      background-color: #0266b7;
-      align-items: flex-end;
-    }
-    .content{
-      display: flex;
-      flex-direction: column;
+    .container{
       width: 100%;
-      justify-content: center;
-      align-items: center;
-      background-color: #c0c0c0;
-    }
-
-    .interacao-usuario{
-      width: 80%;
+      height: calc(100vh - 100px);
       display: flex;
-      gap: 10px;
-      position: absolute;
-      bottom: 0;
 
-      #input-usuario{
+      .menu-ia{
+        display: flex;
+        width: 20%;
+        height: 100%;
+        background-color: #0266b7;
+        border-radius: 8px;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 10px;
+
+        .avatar-usuario{ 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30%;
+          height: 54px;
+
+          img{
+            max-width: 100%;
+          }
+        }
+
+        .nome-usuario{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 54px;
+
+          p{
+            font-size: 20px;
+            color: #fff;
+          }
+        }
+        
+
+        
+      }
+      .content{
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
       }
 
-
-      #btn-limpar{
-        font-family: "Poppins";
-        width: 150px;
-        padding: 5px 10px;
+      .content h1{
+        font-weight: 500;
       }
 
-    }
+      .interacao-usuario{
+        width: 80%;
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        bottom: 0;
+
+        #input-usuario{
+          width: 100%;
+          border-radius: 5px;
+          padding: 10px 5px;
+          background-color: #fff;
+          font-family: "Poppins", sans-serif;
+          border: 1px solid #171717;
+        }
+
+
+        #btn-limpar{
+          font-family: "Poppins", sans-serif;
+          font-size: 20px;
+          width: 100px;
+          padding: 10px 5px;
+          background-color: #fff;
+          color: #E01717;
+          border: 1px solid #E01717;
+          border-radius: 5px;
+        }
+
+
+      }
+  }
 }
+
+footer {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 500;
+  width: 100%;
+  height: auto;
+  padding: 20px 100px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
