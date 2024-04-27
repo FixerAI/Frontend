@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cadastro.css" />
+    <title>Cadastro - FixerAI</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h1 class="logo-title">
+            <a href="../index.html">Fixer<span>AI</span></a>
+          </h1>
+        </div>
+        <ul class="menu">
+          <li class="login menu-item">
+            <a href="../index.html" target="_blank">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="title-section">
+          <h1>Cadastre-se</h1>
+        </div>
+        <form>
+          <div class="inputs-section">
+            <h2>Dados Pessoais</h2>
+            <label for="nomeCompleto">Nome Completo:</label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" required />
+
+            <label for="dataNascimento">Data de Nascimento (DD/MM/AAAA):</label>
+            <input
+              type="date"
+              id="dataNascimento"
+              name="dataNascimento"
+              required
+            />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required />
+
+            <label for="cpf">CPF:</label>
+            <input type="number" id="cpf" name="cpf" required />
+
+            <label for="cnh">Número da CNH:</label>
+            <input type="text" id="cnh" name="cnh" required />
+
+            <label for="dataValidadeCNH"
+              >Data de Validade da CNH (DD/MM/AAAA):</label
+            >
+            <input
+              type="date"
+              id="dataValidadeCNH"
+              name="dataValidadeCNH"
+              required
+            />
+
+            <h2>Endereço</h2>
+
+            <label for="cep">CEP:</label>
+            <input type="number" id="cep" name="cep" required />
+
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro" required />
+
+            <label for="numero">Número:</label>
+            <input type="number" id="numero" name="numero" required />
+
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento" />
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required />
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required />
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required />
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required />
+
+            <label for="confirmarSenha">Confirmar Senha:</label>
+            <input
+              type="password"
+              id="confirmarSenha"
+              name="confirmarSenha"
+              required
+            />
+
+            <button type="reset">Limpar</button>
+            <button type="submit">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; Copyright © 2024 FixerAI. Todos os direitos reservados. FixerAI
+        Brasil Ltda.
+      </p>
+    </footer>
+  </body>
+</html>
