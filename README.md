@@ -1,2 +1,2 @@
 # Frontend
-# Nome dos integrantes: 
+# Nome dos integrantes: Davi Gonzaga Dereira (Lider)
