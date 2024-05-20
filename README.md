@@ -1,5 +1,6 @@
 # Frontend
-# Nome dos integrantes: Davi Gonzaga Ferreira (Lider) - RM554890
+# Nome dos integrantes:
+* Davi Gonzaga Ferreira (Lider) - RM554890
 
 * Jennifer Eduarda Vieira Daleffi - 557137
 
