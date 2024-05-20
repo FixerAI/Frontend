@@ -126,3 +126,8 @@ header {
 .img-content img {
   max-width: 100%;
 }
+
+/* Extra pequeno */
+@media screen and (width < 576px){
+
+}
