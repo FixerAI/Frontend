@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="../css/ia.css" />
   </head>
   <body>
-    <header id="cabecalho">
+    <header id="cabecalho" role="banner">
       <h1 class="logo"><a href="../index.html">FixerAI</a></h1>
-      <nav>
+      <nav role="navigation">
         <ul>
           <li><a href="home">HOME</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="utlizar">
+      <div class="utilizar" role="main">
         <h1>Como posso te ajudar hoje?</h1>
-        <form>
-          <label for="sinistro"></label>
-          <input type="text" id="IA" placeholder="Digite aqui..." required />
+        <form role="search">
+          <label for="sinistro" aria-label="Pesquisar"></label>
+          <input type="text" id="IA" placeholder="Digite aqui..." required aria-required="true" />
           <button type="reset">Limpar</button>
         </form>
       </div>
