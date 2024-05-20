@@ -119,3 +119,22 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+/* Extra pequeno */
+@media screen and (width < 576px) {
+}
+/* o Pequeno (SM) - Telefones Médios e Tablets Pequenos: • Largura: De 576 pixels a 767 pixels. */
+@media screen and (min-width = 576px) and (max-width = 767px) {
+}
+
+/* o Médio (MD) - Tablets e Laptops: • Largura: De 768 pixels a 991 pixels. */
+@media screen and (min-width = 768px) and (max-width = 991px) {
+}
+
+/* o Grande (LG) - Desktops Médios: Largura: De 992 pixels a 1199 pixels. */
+@media screen and (min-width = 992px) and (max-width = 1199px) {
+}
+
+/* o Extra Grande (XL) - Desktops Grandes: Largura: 1200 pixels ou mais. */
+@media screen and (min-width = 1200px) and (max-width = 1200px) {
+}
