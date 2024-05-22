@@ -87,8 +87,8 @@ main {
     .card {
       display: flex;
       flex-direction: column;
-      width: 500px;
-      height: 400px;
+      width: 70vw;
+      height: auto;
       background-color: #f5f5f5;
       align-items: center;
       justify-content: center;
@@ -96,6 +96,7 @@ main {
       border: 1px solid #0282db;
       box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.75);
       gap: 5px;
+      padding: 20px;
 
       .img-container {
         display: flex;
@@ -128,28 +129,104 @@ footer {
   justify-content: center;
 }
 
-
 /* Extra pequeno */
-@media screen and (width < 576px){
+@media screen and (width < 576px) {
+  header {
+    padding: 0 20px;
+  }
+  main {
+    height: auto;
+  }
+  main .cards-integrantes {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .repositorio {
+    text-align: center;
+  }
+
+  footer {
+    padding: 0 20px;
+  }
 }
 /* o Pequeno (SM) - Telefones Médios e Tablets Pequenos: • Largura: De 576 pixels a 767 pixels. */
-@media screen and (min-width = 576px) and (max-width = 767px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  main {
+    height: auto;
+  }
+  main .cards-integrantes {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
+  footer{
+    text-align: center;
+  }
 }
 
 /* o Médio (MD) - Tablets e Laptops: • Largura: De 768 pixels a 991 pixels. */
-@media screen and (min-width = 768px) and (max-width = 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  
+  main .cards-integrantes {
+    width: 100%;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    .card{
+      margin-top: 45px;
+    }
 
+    #team-section{
+      align-self: start;
+      position: absolute;
+    }
+  }
 }
 
-
 /* o Grande (LG) - Desktops Médios: Largura: De 992 pixels a 1199 pixels. */
-@media screen and (min-width = 992px) and (max-width = 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  main .cards-integrantes {
+    width: 100%;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    .card{
+      margin-top: 45px;
+    }
 
+    #team-section{
+      align-self: start;
+      position: absolute;
+    }
+  }
 }
 
 /* o Extra Grande (XL) - Desktops Grandes: Largura: 1200 pixels ou mais. */
-@media screen and (min-width = 1200px) and (max-width = 1200px) {
+@media screen and (min-width: 1200px) {
+  main .cards-integrantes {
+    width: 100%;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    .card{
+      margin-top: 45px;
+    }
 
+    #team-section{
+      align-self: start;
+      position: absolute;
+    }
+  }
 }

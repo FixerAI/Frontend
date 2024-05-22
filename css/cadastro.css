@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -27,6 +33,7 @@ header {
 .logo-title a {
   color: #171717;
 }
+
 .logo-title a span {
   color: #023e8a;
 }
@@ -38,22 +45,23 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
 .menu {
   display: flex;
   list-style: none;
   gap: 40px;
   align-items: center;
+}
 
-  .login a {
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    color: #0282db;
-  }
+.menu .login a {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #0282db;
+}
 
-  .login:hover {
-    text-decoration: underline;
-    color: #0282db;
-  }
+.menu .login:hover {
+  text-decoration: underline;
+  color: #0282db;
 }
 
 main {
@@ -64,52 +72,64 @@ main {
   justify-content: center;
   padding: 0 100px;
   font-family: "Poppins", sans-serif;
+}
 
-  .container {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #0282db;
-    color: #fff;
-    border-radius: 10px;
+.container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0282db;
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 100px;
+}
 
-    form {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      padding: 30px 100px;
-      display: flex;
-      flex-direction: column;
-      font-family: "Poppins", sans-serif;
-      color: #fff;
+form {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
 
-      .inputs-section {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+.inputs-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
-        input {
-          width: 500px;
-          font-family: "Poppins", sans-serif;
-        }
-      }
-      button {
-        width: 100px;
-        height: 30px;
-        font-family: "Poppins", sans-serif;
-        font-size: 14px;
-      }
-    }
-  }
+.inputs-section input {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  padding: 3px 5px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.btns-form {
+  display: flex;
+  margin: 10px 0;
+  gap: 10px;
+}
+
+.title-division {
+  margin: 0 auto;
 }
 
 footer {
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
   width: 100%;
   height: auto;
@@ -118,23 +138,76 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
-/* Extra pequeno */
-@media screen and (width < 576px) {
-}
-/* o Pequeno (SM) - Telefones Médios e Tablets Pequenos: • Largura: De 576 pixels a 767 pixels. */
-@media screen and (min-width = 576px) and (max-width = 767px) {
+/* Extra Grande (XL) - Desktops Grandes: Largura: 1200 pixels ou mais. */
+@media screen and (min-width: 1200px) {
+  /* Estilos específicos para telas grandes, se necessário */
 }
 
-/* o Médio (MD) - Tablets e Laptops: • Largura: De 768 pixels a 991 pixels. */
-@media screen and (min-width = 768px) and (max-width = 991px) {
+/* Grande (LG) - Desktops Médios: Largura: De 992 pixels a 1199 pixels. */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  header {
+    padding: 0 50px;
+  }
+  .container {
+    width: 90%;
+    padding: 30px 50px;
+  }
 }
 
-/* o Grande (LG) - Desktops Médios: Largura: De 992 pixels a 1199 pixels. */
-@media screen and (min-width = 992px) and (max-width = 1199px) {
+/* Médio (MD) - Tablets e Laptops: Largura: De 768 pixels a 991 pixels. */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header {
+    padding: 0 30px;
+  }
+  .container {
+    width: 100%;
+    padding: 30px 30px;
+  }
 }
 
-/* o Extra Grande (XL) - Desktops Grandes: Largura: 1200 pixels ou mais. */
-@media screen and (min-width = 1200px) and (max-width = 1200px) {
+/* Pequeno (SM) - Telefones Médios e Tablets Pequenos: Largura: De 576 pixels a 767 pixels. */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  header {
+    padding: 0 20px;
+  }
+  .navbar {
+    gap: 20px;
+  }
+  .container {
+    padding: 20px;
+  }
+  form {
+    padding: 20px !important;
+  }
+}
+
+/* Extra pequeno (XS) - Telefones Pequenos: Largura: Menor que 576 pixels. */
+@media screen and (max-width: 575px) {
+  header {
+    padding: 0 10px;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main {
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+  form {
+    padding: 20px !important;
+  }
+  .title-division {
+    font-size: 20px;
+  }
+  footer {
+    padding: 0 10px;
+    text-align: center;
+  }
 }

@@ -30,6 +30,7 @@ header {
 .logo-title a {
   color: #171717;
 }
+
 .logo-title a span {
   color: #023e8a;
 }
@@ -41,41 +42,45 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
 .menu {
   display: flex;
   list-style: none;
   gap: 40px;
   align-items: center;
-
-  .link-login {
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    color: #0282db;
-  }
-
-  .link-login:hover {
-    text-decoration: underline;
-  }
-
-  .link-cadastrar {
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
-    color: #171717;
-    padding: 5px 10px;
-    border: 1px solid #171717;
-    border-radius: 5px;
-    background-color: transparent;
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  .link-cadastrar:hover, .link-cadastrar:focus{
-    color: #fff;
-    transition: 0.5s ease-in-out;
-    box-shadow: inset 6.5em 0 0 0 #023e8a;
-
-  }
+  width: 100%;
 }
+
+.link {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #0282db;
+
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
+.link-cadastrar {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #171717;
+  padding: 5px 10px;
+  border: 1px solid #171717;
+  border-radius: 5px;
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.link-cadastrar:hover,
+.link-cadastrar:focus {
+  color: #fff;
+  transition: 0.5s ease-in-out;
+  box-shadow: inset 6.5em 0 0 0 #023e8a;
+}
+
 
 .content {
   display: flex;
@@ -93,30 +98,33 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  h1 {
-    font-size: 36px;
-  }
-  h2 {
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .link-cadastrar {
-    width: 150px;
-    padding: 10px 5px;
-    border: none;
-    border-radius: 5px;
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    background-color: #0282db;
-    color: #fff;
-    cursor: pointer;
-    text-align: center;
+}
 
-    &:hover {
-      transition: 0.4s ease;
-      box-shadow: 1px 2px 8px 1px rgba(0, 0, 0, 0.75);
-    }
-  }
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text-content .link-cadastrar {
+  width: 150px;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  background-color: #0282db;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.text-content .link-cadastrar:hover {
+  transition: 0.4s ease;
+  box-shadow: 1px 2px 8px 1px rgba(0, 0, 0, 0.75);
 }
 
 .img-content {
@@ -127,27 +135,251 @@ header {
   max-width: 100%;
 }
 
+footer {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 500;
+  width: 100%;
+  height: auto;
+  padding: 20px 100px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Extra pequeno */
-@media screen and (width < 576px){
+@media screen and (max-width: 575px) {
+  header {
+    padding: 0 20px;
+  }
 
+  header .navbar {
+    justify-content: space-between;
+  }
+
+  header .navbar .menu {
+    flex-direction: row-reverse;
+  }
+
+  header .navbar .logo-title {
+    font-size: 32px;
+  }
+
+  header .navbar .menu .menu-item img {
+    max-width: 60%;
+    position: absolute;
+    right: 20px;
+    top: 38px;
+  }
+
+  header .navbar .menu .menu-item a {
+    display: none;
+  }
+
+  main .content {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    gap: 30px;
+  }
+
+  main .content .text-content {
+    align-items: center;
+
+    h1 {
+      font-size: 28px;
+    }
+    a {
+      display: none;
+    }
+  }
+
+  main .content .img-content {
+    width: 80%;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
 }
-/* o Pequeno (SM) - Telefones Médios e Tablets Pequenos: • Largura: De 576 pixels a 767 pixels. */
-@media screen and (min-width = 576px) and (max-width = 767px) {
 
+/* Pequeno (SM) - Telefones Médios e Tablets Pequenos */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  header {
+    padding: 0 100px;
+  }
+
+  header .navbar {
+    justify-content: space-between;
+  }
+
+  header .navbar .menu {
+    flex-direction: row-reverse;
+  }
+
+  header .navbar .logo-title {
+    font-size: 32px;
+  }
+
+  header .navbar .menu .menu-item img {
+    max-width: 100%;
+  }
+
+  header .navbar .menu .menu-item a {
+    display: none;
+  }
+
+  main .content {
+    padding: 20px 80px;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    gap: 30px;
+  }
+
+  main .content .text-content {
+    h1 {
+      font-size: 32px;
+    }
+    a {
+      display: none;
+    }
+  }
+
+  main .content .img-content {
+    width: 60%;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
 }
 
-/* o Médio (MD) - Tablets e Laptops: • Largura: De 768 pixels a 991 pixels. */
-@media screen and (min-width = 768px) and (max-width = 991px) {
+/* Médio (MD) - Tablets e Laptops */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header {
+    padding: 0 100px;
+  }
 
+  header .navbar {
+    justify-content: space-between;
+  }
+
+  header .navbar .menu {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  header .navbar .logo-title {
+    font-size: 42px;
+  }
+
+  header .navbar .menu .menu-item img {
+    display: none;
+  }
+
+  main .content {
+    padding: 20px 100px;
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+  }
+
+  main .content .text-content {
+    text-align: left;
+
+    h1 {
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+
+    a {
+      display: none;
+    }
+  }
+
+  main .content .img-content {
+    width: 60%;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
 }
 
+/* Grande (LG) - Desktops Médios */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  header .navbar .menu .menu-item img {
+    display: none;
+  }
 
-/* o Grande (LG) - Desktops Médios: Largura: De 992 pixels a 1199 pixels. */
-@media screen and (min-width = 992px) and (max-width = 1199px) {
+  header .navbar .menu {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 
+
+  main .content {
+    padding: 20px 100px;
+    gap: 30px;
+  }
+
+  main .content .text-content {
+    text-align: left;
+
+    h1 {
+      font-size: 34px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+  }
+
+  main .content .img-content {
+    width: 70%;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
 }
 
-/* o Extra Grande (XL) - Desktops Grandes: Largura: 1200 pixels ou mais. */
-@media screen and (min-width = 1200px) and (max-width = 1200px) {
+/* Extra Grande (XL) - Desktops Grandes */
+@media screen and (min-width: 1200px) {
+  header .navbar .menu .menu-item img {
+    display: none;
+  }
 
+  header .navbar .menu {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+
+  main .content {
+    padding: 20px 100px;
+    gap: 30px;
+  }
+
+  main .content .text-content {
+    text-align: left;
+
+    h1 {
+      font-size: 46px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+  }
+
+  main .content .img-content {
+    max-width: 40%;
+  }
 }

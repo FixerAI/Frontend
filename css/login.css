@@ -86,7 +86,6 @@ main {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 0 100px;
 
       form {
         width: 100%;
@@ -123,11 +122,21 @@ main {
             border-radius: 5px;
             color: #fff;
             padding: 5px 10px;
+            cursor: pointer;
+          }
+          button:hover {
+            border: 1px solid #171717;
+            transition: 0.5s ease-in-out;
+            box-shadow: inset 6.5em 0 0 0 #023e8a;
           }
         }
       }
     }
   }
+}
+
+.link-lg-cadastrar:hover {
+  text-decoration: underline;
 }
 
 footer {
@@ -142,28 +151,84 @@ footer {
   justify-content: center;
 }
 
-
 /* Extra pequeno */
-@media screen and (width < 576px){
+@media screen and (max-width: 575px) {
+  header {
+    padding: 0 20px;
+  }
 
+  main {
+    padding: 0 20px;
+    p {
+      text-align: center;
+    }
+  }
+
+  main .login {
+    width: 100%;
+    padding: 0 20px;
+
+    .form-content {
+      padding: 0;
+    }
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
 }
 /* o Pequeno (SM) - Telefones Médios e Tablets Pequenos: • Largura: De 576 pixels a 767 pixels. */
-@media screen and (min-width = 576px) and (max-width = 767px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  main {
+    padding: 0 100px;
+    p {
+      text-align: center;
+    }
+  }
 
+  main .login {
+    min-width: 400px;
+    padding: 0 20px;
+
+    .form-content {
+      padding: 0;
+    }
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
 }
 
 /* o Médio (MD) - Tablets e Laptops: • Largura: De 768 pixels a 991 pixels. */
-@media screen and (min-width = 768px) and (max-width = 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  main .login {
+    min-width: 400px;
+    padding: 0 20px;
 
+    .form-content {
+      padding: 0;
+    }
+  }
 }
 
-
 /* o Grande (LG) - Desktops Médios: Largura: De 992 pixels a 1199 pixels. */
-@media screen and (min-width = 992px) and (max-width = 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  main .login {
+    min-width: 400px;
+    padding: 0 20px;
 
+    .form-content {
+      padding: 0;
+    }
+  }
 }
 
 /* o Extra Grande (XL) - Desktops Grandes: Largura: 1200 pixels ou mais. */
-@media screen and (min-width = 1200px) and (max-width = 1200px) {
-
+@media screen and (min-width: 1200px) {
+  main .login {
+    min-width: 600px;
+  }
 }

@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+}
+
+.logo-title a {
+  color: #171717;
+}
+.logo-title a span {
+  color: #023e8a;
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+
+  .home {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #171717;
+  }
+  .home:hover {
+    text-decoration: underline;
+    color: #0282db;
+  }
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: calc(100vh - 100px);
+
+  .container {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+
+    .menu-ia {
+      display: flex;
+      width: 20%;
+      height: 100%;
+      background-color: #0266b7;
+      border-radius: 8px;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 10px;
+
+      .avatar-usuario {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 54px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .nome-usuario {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 54px;
+
+        p {
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+    }
+
+    .content h1 {
+      font-weight: 500;
+    }
+
+    .interacao-usuario {
+      width: 80%;
+      display: flex;
+      gap: 10px;
+      position: absolute;
+      bottom: 0;
+
+      #input-usuario {
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px 5px;
+        background-color: #fff;
+        font-family: "Poppins", sans-serif;
+        border: 1px solid #171717;
+      }
+
+      #btn-limpar {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        width: 100px;
+        padding: 10px 5px;
+        background-color: transparent;
+        color: #e01717;
+        border: 1px solid #e01717;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover{
+          color: #fff;
+          border: 1px solid #171717;
+          transition: 0.5s ease-in-out;
+          box-shadow: inset 6.5em 0 0 0 #e01717;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 500;
+  width: 100%;
+  height: auto;
+  padding: 20px 100px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Extra Grande (XL) - Desktops Grandes: Largura: 1200 pixels ou mais. */
+@media screen and (min-width: 1200px) {
+  /* Estilos específicos para telas grandes, se necessário */
+}
+
+/* Grande (LG) - Desktops Médios: Largura: De 992 pixels a 1199 pixels. */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+/* Médio (MD) - Tablets e Laptops: Largura: De 768 pixels a 991 pixels. */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header {
+    padding: 0 30px;
+  }
+
+  main .container .menu-ia {
+    .avatar-usuario {
+      display: none;
+    }
+  }
+}
+
+/* Pequeno (SM) - Telefones Médios e Tablets Pequenos: Largura: De 576 pixels a 767 pixels. */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  header {
+    padding: 0 20px;
+  }
+  .navbar {
+    gap: 20px;
+  }
+
+  main .container .menu-ia {
+    .avatar-usuario {
+      display: none;
+    }
+  }
+}
+
+/* Extra pequeno (XS) - Telefones Pequenos: Largura: Menor que 576 pixels. */
+@media screen and (max-width: 575px) {
+  header {
+    padding: 0 10px;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main .container {
+    flex-direction: column;
+    .content {
+      height: calc(100% - 110px);
+      align-self: center;
+      justify-self: center;
+    }
+    .content h1 {
+      text-align: center;
+    }
+  }
+
+  main .container .menu-ia {
+    width: 100%;
+    height: 50px;
+    padding: 10px 0;
+    justify-content: space-around;
+    border-radius: 0;
+    background-color: transparent;
+    border-top: 2px solid #0282db;
+
+    .avatar-usuario {
+      width: max-content;
+      height: 100%;
+    }
+    .avatar-usuario img {
+      width: 100%;
+      height: 100%;
+    }
+    .nome-usuario {
+      width: max-content;
+      height: 100%;
+      p {
+        color: #171717;
+      }
+    }
+  }
+
+  footer {
+    padding: 10px 10px;
+    text-align: center;
+  }
+}
