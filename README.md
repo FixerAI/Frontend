@@ -22,7 +22,7 @@ por um humano.
 
 <p align="center">
   <a href="https://icons8.com.br/icons/set/html">
-    <img src="https://img.icons8.com/?size=100&id=10246&format=png&color=000000, https://img.icons8.com/?size=100&id=10236&format=png&color=000000, https://img.icons8.com/?size=100&id=108784&format=png&color=000000" />
+    <img src="https://img.icons8.com/?size=100&id=10246&format=png&color=000000/>
   </a>
 </p>
 
