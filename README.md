@@ -20,9 +20,10 @@ exemplo) e, consequentemente, garantir um orçamento fidedigno ao cliente de aco
 experiência geraria credibilidade e eficiência uma vez que em muitos casos os clientes desconfiam dos serviços e dos diagnósticos realizados
 por um humano.
 
+# 
 <p align="center">
-  <a href="https://icons8.com.br/icons/set/html">
-    <img src="https://img.icons8.com/?size=100&id=10246&format=png&color=000000/>
+  <a href="https://icons8.com.br/icons/set/css">
+    <img src="https://img.icons8.com/?size=100&id=10236&format=png&color=000000" />
   </a>
 </p>
 
